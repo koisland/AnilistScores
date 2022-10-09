@@ -1,0 +1,13 @@
+[package]
+name = "avg_anilist_index"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+polars = {version = "0.23.2", features = ["lazy", "csv-file"]}
+tokio = { version = "1", features = ["full"] }
+reqwest = "*"
+serde = "*"
+serde_json = "*"
